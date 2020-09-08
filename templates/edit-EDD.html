@@ -1,0 +1,48 @@
+{% extends "compartidos.html" %}
+
+{% block body %}
+
+<div class="col-md-4-offset-md-4">
+    <div>
+        <form action="/update/{{quick_edd.0}}" method="POST">
+          
+            <div class="form-group">
+            <input type ="text" name ="Cliente" placeholder ="Cliente" value ="{{quick_edd.1}}" class="form-control">
+            </div>
+                
+             <div class="form-group">
+             <input type ="text" name ="Módelo" placeholder ="Módelo" value ="{{quick_edd.2}}" class="form-control">
+            </div>
+                
+
+            <div class="form-group">
+            <input type ="text" name ="Procesador" placeholder ="Procesador" value ="{{quick_edd.3}}" class="form-control">
+            </div>
+            
+            </div>
+            <div class="form-group">
+            <input type ="text" name ="Grupo" placeholder ="Grupo" value ="{{quick_edd.4}}" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <input type ="text" name ="Serie" placeholder ="Serie" value ="{{quick_edd.5}}" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <input type ="text" name ="Partición" placeholder ="Partición" value ="{{quick_edd.6}}" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <input type ="text" name ="Producto" placeholder ="Producto" value ="{{quick_edd.7}}" class="form-control">
+            </div>
+            
+            <div class="form-group">
+            <button type ="submit" class="btn btn-success">
+                Guardar
+            </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
